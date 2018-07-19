@@ -11,10 +11,9 @@ from sklearn.cross_validation import train_test_split
 from sklearn.metrics import accuracy_score
 
 def knnclassify(x_test,x_train,y_train,k):
-    ans = [] 
-    getsortedDisIndicies[i]
-    classCount[votelabel]=classCount.getsortedDisIndicies
+    ans = []
     for x in x_test:
+        classCount[votelabel]=classCount.getortedDifor x in x_test:
         ans.append(knnclassifyone(x,x_train,y_train,k))
 
 def knnclassifyone(x,x_train,y_train,k):
@@ -59,15 +58,7 @@ if __name__ == '__main__':
 
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2)
     clf=knnclassify(x_test,x_train,y_test,4)
-   #  loop over the list clf, and compare each with the correct answer 
-   #clf = neighbors.KNeighborsClassifier(algorithm='kd_tree')
-   #clf.fit(x_train, y_train)
 
-   # answer = clf.predict(x)
-   #print(x)
-   #print(answer)
-   #print(y)
-   #print(np.mean(answer == y))
     A=accuracy_score(y, answer)
     print(A)
 
